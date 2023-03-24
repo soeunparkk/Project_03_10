@@ -7,32 +7,24 @@ public class Test_002 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int answer;                      //정수 answer 선언
-        answer = 1 + 2;                  //amswer에 1+2연산 값을 입력
-        Debug.Log(answer);               //answer를 Debug.Log에 출력 시킨다.
+        int answer;         //변수 int answer 선언
+        answer = 1 + 2;     //answer에 1+2 값 입력
+        Debug.Log(answer);  //Console.log()answer 값을 보여줌
 
-        int n1 = 8;                      //정수 n1 선언 후 값을 입력             
-        int n2 = 9;                      //정수 n2 선언 후 값을 9입력
-        int answer2;                     //정수 answer2 선언
-        answer2 = n1 + n2;               //정수 answer2에 n1 과 n2 더한 값을 입력
-        Debug.Log(answer2);              //answer2를 Debhg.Log에 출력 시킨다.
+        int n1 = 8;         //변수 int 선언 이름은 n1이고 8의 값을 입력
+        int n2 = 9;         //변수 int 선언 이름은 n2이고 9의 값을 입력
+        int answer2;        //변수 int anwer2 선언 (기존에 anwer 선언 되어있어서 다시 선언)
+        answer2 = n1 + n2;  //answer2에 변수 n1 값과 n2 값의 더한 값을 입력
+        Debug.Log(answer2);  //Console.log()answer2 값을 보여줌
 
-        int answer3 = 10;                //정수 answer3 선언 후 값 10를 입력
-        answer3 += 5;                    //정수 answer3에 +5 값을 추가 (answer3 = answer3 + 5)
-        Debug.Log(answer3);              //answer3를 Debug.Log에 출력 시킨다.
-        answer3++;                       //정수 answer3에 +1 값을 추가 (answer3 = answer3 + 1)
-        Debug.Log(answer3);              //answer3fmf Debug.Log에 출력시킨다.
+        answer2 += 5;       //answer2=answer2+5의 축약
+        Debug.Log(answer2); //Console.log() answer2값을 보여줌
 
-        string str = "Happy";           //문자열 str에 "Happy" 입력
-        string str3 = "birthday";       //문자열 str2에 "birthday"입력
+        answer2++;          //answer2 = answer2 + 1의 축약 보통 반복문에서 1씩 더해서 처리할때 쓰임
+        Debug.Log(answer2); //Console.log()answer2 값을 보여줌
 
-        str += str3;                    //str = str + str2;
-        Debug.Log(str);                 //str 더 하나 값을 Debug.Log에 출력 시킨다.
-
-        string message = str + answer3; //문자열 message를 선언하고 (String)값 str과 (int)값 answer3를 더한다.
-        Debug.Log(message);             //message 값을 Debug.Log에 출력 시킨다.
     }
-    
+
     // Update is called once per frame
     void Update()
     {

@@ -6,21 +6,19 @@ public class Test_001 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
-    {   //한번만 실행 됨
-        int age;                //변수 age를 선언
-        age = 30;               //변수 age에 30의 값을 입력
-        Debug.Log(age);         //age에 입력된 값을 유니티 Console 창에 보여줌
+    {
+        int age;             //정수형 int 선언 이름은 age
+        age = 30;            //age에 30 입력 (=) 입력
+        Debug.Log(age);      //Console.log 창에 age의 값을 보여준다.
 
-        float height = 160.5f;  //height1에 160.5 값 선언
-        float height2;          //height2 선언
+        float height1 = 160.5f; //부동소수점형 float 선언 이름은 height 이고 160.5f 입력
+        float height2;        //float 형 height2 선언
+        height2 = height1;  //height1에 있는 height2에 입력
+        Debug.Log(height2); //Console.log 창에 height2 의 값을 보여준다.
 
-        height2 = height;       //height에 height값을 입력
-        Debug.Log(height);      //height2에 입력된 값을 유니티 Console 창에 보여줌
-
-        string name;            //Name을 선언
-        name = "Sera";          //Name에 Sera 입력
-        Debug.Log(name);        //Name에 입력된 값을 유니티 Console 창에 보여줌
-
+        string name;        //문자열 name 선언
+        name = "Sera";      //name Sera 입력
+        Debug.Log(name);    //Console.log 창에 name 의 값을 보여준다.
     }
 
     // Update is called once per frame
