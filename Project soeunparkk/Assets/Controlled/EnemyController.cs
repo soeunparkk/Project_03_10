@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();             //시작할때 자기 자신의 Rigidbody를 받아온다.
-        player = GameObject.FindGameObjectWithTag("Player").transform;      //Scene에서 Player Tag를 가진 오브젝틀를 가져와서 Transform 을 참조
+        player = GameObject.FindGameObjectWithTag("Player").transform;      //Scene에서 Player Tag를 가진 오브젝트를 가져와서 Transform 을 참조
     }
 
     // Update is called once per frame
