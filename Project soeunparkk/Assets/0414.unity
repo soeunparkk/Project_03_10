@@ -255,6 +255,7 @@ MonoBehaviour:
   moveSpeed: 6
   PlayerPivot: {fileID: 545976120}
   projectileController: {fileID: 130244554}
+  Player_hp: 5
 --- !u!1 &130244550
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,24 +901,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &919132148342952473 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3771548900102815648, guid: 379c697520f950249b093397a98b24bc, type: 3}
-  m_PrefabInstance: {fileID: 4077537137652346297}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &919132148342952474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148342952473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30dc88f7849c0b54fbf94e8dd7e19327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!1001 &2866307978792813779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327677758577638494, guid: 64f7139a00588ff4b8951ba3dffe83eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 2327677758577638494, guid: 64f7139a00588ff4b8951ba3dffe83eb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1016,7 +999,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3771548900102815648, guid: 379c697520f950249b093397a98b24bc, type: 3}
       propertyPath: m_Name
-      value: 0428 charater 1
+      value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 4547768183613089050, guid: 379c697520f950249b093397a98b24bc, type: 3}
       propertyPath: m_RootOrder
@@ -1024,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4547768183613089050, guid: 379c697520f950249b093397a98b24bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4547768183613089050, guid: 379c697520f950249b093397a98b24bc, type: 3}
       propertyPath: m_LocalPosition.y

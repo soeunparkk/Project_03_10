@@ -6,6 +6,14 @@ public class ProjectileMove : MonoBehaviour
 {
     public Vector3 launchDirection;         //발사체 방향성 선언
 
+    public enum BULLETTYPE
+    {
+        PLAYER,
+        ENEMY
+    }
+
+    public BULLETTYPE bulletType = BULLETTYPE.PLAYER;
+
     private void FixedUpdate()              //이동 관련 함수
     {
         float moveAmount = 3 * Time.fixedDeltaTime;         //발사체 이동 속도
@@ -41,10 +49,17 @@ public class ProjectileMove : MonoBehaviour
             Destroy(temp);                                        //곧바로 파괴한다.
         }
 
-
-        if (other.gameObject.name == "Monster")             //벽에 충돌이 일어났을 때
+        if (other.gameObject.tag == "Monster" && bulletType == BULLETTYPE.PLAYER)
         {
             other.gameObject.GetComponent<MonsterController>().Monster_Damaged(1);
+            GameObject temp = this.gameObject;
+            Destroy(temp);
+        }
+
+
+        if (other.gameObject.tag == "Player" && bulletType == BULLETTYPE.ENEMY)             //벽에 충돌이 일어났을 때
+        {
+            other.gameObject.GetComponent<PlayerController>().Player_Damaged(1);
             GameObject temp = this.gameObject;                  //나 자신을 가져와서 temp 에 입력한다.
             Destroy(temp);                                        //곧바로 파괴한다.
         }
